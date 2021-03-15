@@ -6,7 +6,7 @@
 
 The repo includes slides i find useful, my all homeworks and lab codes.
 
-| Week | Subject | LAB | HW |
+| Week | [**`Subject`**](http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html) | LAB | HW |
 |:----:|:-------:|:-----:|:---:|
 |1|Inheritance, Abstract, Interface and Generics|[**`Generics`**](/_data/lab/hafta_1/)<br>**`[100/100]`** |	|
 |2|Stacks, Queues and Operation Notations| [**`Stacks`**](/_data/lab/hafta_2/)<br>**`[75/100]`** 	|	|
