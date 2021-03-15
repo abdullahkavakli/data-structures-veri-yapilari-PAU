@@ -1,3 +1,7 @@
+
+/**
+ * @author abdullahkavakli
+ */
 public class QuadraticProbeHashing<T> {
 
 	public HashEntry<T>[] dizi;
