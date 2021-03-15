@@ -16,7 +16,7 @@ The repo includes slides i find useful, my all homeworks and lab codes.
 |6|Binary Heap and Huffman Trees|[**`BinaryHeap`**](/_data/lab/hafta_6/)<br>**`[50/100]`** |
 |7|2-3 Trees and B Trees| [**`AVLTrees`**](/_data/lab/hafta_7/)<br>**`[100/100]`** |
 |8|Hash| [**`SeperatedChainHash`**](/_data/lab/hafta_8/)<br>**`[100/100]`** |
-|9| **`[--]`** | [**`QuadraticProbeHashh`**](/_data/lab/hafta_9/)<br>**`[100/100]`** | [**`HuffmanNode`**](_data/hw/odev3/)<br>**`[100/100]`** |
+|9| [--] | [**`QuadraticProbeHashh`**](/_data/lab/hafta_9/)<br>**`[100/100]`** | [**`HuffmanNode`**](_data/hw/odev3/)<br>**`[100/100]`** |
 |10|Graph|[**`AbstractGraph`**](/_data/lab/hafta_10/)<br>**`[100/100]`** |
 |11|Graph Algorithms|[**`AbstractGraph2`**](/_data/lab/hafta_11/)<br>**`[100/100]`**|
 |12|Sorting Algorithms|	[**`AbstractGraph3`**](/_data/lab/hafta_12/)<br>**`[100/100]`**|[**`AbstractGraph`**](_data/hw/odev4)<br>**`[100/100]`**|
