@@ -1,3 +1,6 @@
+/**
+ * @author abdullahkavakli
+ */
 
 
 public class LabBinarySearchTree<T extends Comparable<T>> extends BinarySearchTree<T> {
@@ -65,7 +68,6 @@ public class LabBinarySearchTree<T extends Comparable<T>> extends BinarySearchTr
             }
         }
         
-        //return null;
     }
 
 
