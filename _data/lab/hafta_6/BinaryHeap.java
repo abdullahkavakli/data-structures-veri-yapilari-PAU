@@ -1,95 +1,69 @@
-
-import java.util.Arrays;
-
 /**
  * Minimum heap sınıfı
+ *
  * @param <T> Generic sınıf
  */
 public class BinaryHeap<T extends Comparable<T>> {
-    public T[]  dizi;//Yığını tutacak dizi(değiştirmeyin)
-    public int es;//Eleman sayısı(değiştirmeyin)
 
-    public BinaryHeap() {//değiştirmeyin
-        dizi=(T[]) new Comparable[100];
-    }
-    public BinaryHeap(int boyut){//değiştirmeyin
-        dizi=(T[])new Comparable[boyut];
-    }
-    public int ebeveyn(int konum){ return konum/2;}//değiştirmeyin, kullanın
-    public int solCocuk(int konum){ return 2*konum;}//değiştirmeyin, kullanın
-    public int sagCocuk(int konum){return 2*konum+1;}//değiştirmeyin, kullanın
-    public int elemanSayisi(){return es;}
+	public T[] dizi; // Yığını tutacak dizi(değiştirmeyin)
+	public int es; // Eleman sayısı(değiştirmeyin)
 
-    public void ekle(T eleman){
-        es++;
-        
-        dizi[es]=eleman;
-        
-        int değistirilecekyer=es;
-        while(değistirilecekyer>1 && eleman.compareTo(dizi[ebeveyn(değistirilecekyer)])<0){
-            T ebeveyn = dizi[ebeveyn(değistirilecekyer)];
-            dizi[ebeveyn(değistirilecekyer)]=eleman;
-            //eleman=ebeveyn;
-            dizi[değistirilecekyer]=ebeveyn;
-            değistirilecekyer/=2;
-            
-        }
-        
-        
-        
-        
-    }
+	public BinaryHeap() { dizi = (T[]) new Comparable[100]; } // değiştirmeyin, kullanın
+	
+	public BinaryHeap(int boyut) { dizi = (T[]) new Comparable[boyut]; } // değiştirmeyin, kullanın
+	public int ebeveyn(int konum) { return konum / 2; } // değiştirmeyin, kullanın
+	public int solCocuk(int konum) { return 2 * konum; } // değiştirmeyin, kullanın
+	public int sagCocuk(int konum) { return 2 * konum + 1; } // değiştirmeyin, kullanın
+	public int elemanSayisi() { return es; } // değiştirmeyin, kullanın
 
-    public T sil(){
-        
-        if(es>0){
-            
-            T donecek=dizi[1];     
-            //dizi[es]=null;
-            //System.out.println(es);
-            dizi[1]=dizi[es];
-            dizi[es--]=null;
-            //System.out.println(Arrays.toString(dizi));
-            int degisecek=1;
-            
-            while(es>degisecek){
-                
-                if(es>=degisecek*2+1){
-                    switch(dizi[solCocuk(degisecek)].compareTo(dizi[sagCocuk(degisecek)])){
-                        case -1:
-                            T soldaki= dizi[solCocuk(degisecek)];
-                            dizi[solCocuk(degisecek)]=dizi[degisecek];
-                            dizi[degisecek]=soldaki;
-                            degisecek=degisecek*2;
-                            break;
-                        default:
-                            T sagdaki= dizi[sagCocuk(degisecek)];
-                            dizi[sagCocuk(degisecek)]=dizi[degisecek];
-                            dizi[degisecek]=sagdaki;
-                            degisecek=degisecek*2+1;
-                    }
-                        
-                }else if(es>=degisecek*2){
-                    T soldaki= dizi[solCocuk(degisecek)];
-                    dizi[solCocuk(degisecek)]=dizi[degisecek];
-                    dizi[degisecek]=soldaki;
-                    degisecek=degisecek*2;
-                    
-                }else
-                    break;
-                
-                
-                
-            }
-            
-            //if(solCocuk(1).compareTo(sagcocuk(1)))
-            
-            
-            return donecek;
-        }else
-            return null;
-    }
+	public void ekle(T eleman) {
+		es++;
+		dizi[es] = eleman;
+			
+		heapifyUp();
+	}
+
+	public void heapifyUp() {
+		int counter = es;
+		
+		while (ebeveyn(counter) > 0 && dizi[counter].compareTo(dizi[ebeveyn(counter)]) <= 0) {
+			T temp = dizi[ebeveyn(counter)];
+			dizi[ebeveyn(counter)] = dizi[counter];
+			dizi[counter] = temp;
+		
+			counter = ebeveyn(counter);
+		}
+	}
+	
+	public T sil() {
+		T deleted = dizi[1];
+		dizi[1] = dizi[es];
+		dizi[es--] = null;
+		
+		heapifyDown();
+		
+		return deleted;
+	}
+	
+	public void heapifyDown() {
+		int counter = 1;
+		
+		while (solCocuk(counter) <= es) {
+			int dahaKucukOlan = solCocuk(counter);
+		
+			if (sagCocuk(counter) <= es && dizi[sagCocuk(counter)].compareTo(dizi[solCocuk(counter)]) <= 0 ) {
+				dahaKucukOlan = sagCocuk(counter);
+			}
+			
+			if (dizi[counter].compareTo(dizi[dahaKucukOlan]) >= 0) {
+				T temp = dizi[dahaKucukOlan];
+				dizi[dahaKucukOlan] = dizi[counter];
+				dizi[counter] = temp;
+			} else {
+				break;
+			}
+			
+			counter = dahaKucukOlan;
+		}
+	}
 }
-/*T ebeveyn = dizi[ebeveyn(eklenecek)];
-            dizi[ebeveyn(eklenecek)]=eleman;
-            eleman=ebeveyn;*/
