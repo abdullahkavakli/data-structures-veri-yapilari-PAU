@@ -1,4 +1,7 @@
-//işçöğİıü
+/**
+ * @author abdullahkavakli
+ */
+
 import java.util.*;
 
 /**
@@ -85,10 +88,8 @@ public class Islemler {
         
         String result ="";
         Stack<Character> stack = new Stack<>();
-        //char dp=' ';//digit place
         
         for(int i=0; i<girdi.length();i++){
-            //System.out.println(girdi.length());
             char ch = girdi.charAt(i);
             
             
@@ -105,7 +106,7 @@ public class Islemler {
                     }
                     result+=" ";
                 }
-                //continue; gerekli olabilir
+                
             }else if(isOperator(ch)){
                 
                 while (!stack.isEmpty() && OpPrec(ch) <= OpPrec(stack.peek())&& stack.peek()!='('){ 
@@ -142,15 +143,7 @@ public class Islemler {
             char ch = girdi.charAt(++sayac);
         
             if(Character.isDigit(ch)){
-                basamak++;
-                //sayac++;
-                /*
-                if(length>(sayac+1)){
-                    ch = girdi.charAt(sayac);
-                    sayac++;
-                }                
-                ch = girdi.charAt(sayac);
-                */
+                basamak++;             
             }else
                 break;
         }
