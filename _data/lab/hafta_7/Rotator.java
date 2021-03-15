@@ -14,9 +14,7 @@ public class Rotator {
         if(y!=null)
             k1.right=y;
         else
-            k1.right=null;
-        //return null;
-        
+            k1.right=null;        
         
         return k2;
     }
@@ -34,8 +32,6 @@ public class Rotator {
             k2.left=y;
         else
             k2.left=null;
-            
-        //return null;
         
         
         return k1;
