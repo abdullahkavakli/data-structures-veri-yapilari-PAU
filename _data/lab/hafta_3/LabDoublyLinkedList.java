@@ -1,4 +1,7 @@
-//işçğüI
+/**
+ * @author abdullahkavakli
+ */
+
 public class LabDoublyLinkedList<T> extends DoublyLinkedList<T> {
     
     
@@ -12,7 +15,7 @@ public class LabDoublyLinkedList<T> extends DoublyLinkedList<T> {
             
         } else {
         Node<T> Brought= getNode(index);
-        Node<T> NewNode=new Node<>(value, Brought.next, Brought);//Node<T> node=new Node<>(value, null, tail);
+        Node<T> NewNode=new Node<>(value, Brought.next, Brought);
         Brought.next.previous=NewNode;
         Brought.next=NewNode;
         setSize(size()+1);
