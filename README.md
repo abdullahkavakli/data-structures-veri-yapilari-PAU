@@ -6,6 +6,6 @@
 
 The repo includes slides i find useful, my all homeworks and lab codes.
 
-| Week | Subject (notes) | Presentation | LAB | HW |
-|:----:|:-------:|:-----:|:---:|:---:|
-||||||
+| Week | Subject | LAB | HW |
+|:----:|:-------:|:-----:|:---:|
+|1|	|	|	|
