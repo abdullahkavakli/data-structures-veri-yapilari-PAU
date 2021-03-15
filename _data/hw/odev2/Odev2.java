@@ -1,4 +1,7 @@
-//Abdullah Kavaklı 19253037
+/**
+ * @author abdullahkavakli
+ */
+
 
 import java.util.*;
 
