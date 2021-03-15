@@ -1,5 +1,5 @@
 /**
- * @author @abdullahkavakli
+ * @author abdullahkavakli
  */
 
 
