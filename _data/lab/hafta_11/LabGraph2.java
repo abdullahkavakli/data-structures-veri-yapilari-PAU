@@ -1,7 +1,7 @@
-package AbstractGraph2;
+/**
+ * @author abdullahkavakli
+ */
 
-
-//import java.util.*;
 import java.util.*;
 
 public class LabGraph2<T extends Comparable<? super T>> extends AbstractGraph2<T> {
@@ -9,12 +9,10 @@ public class LabGraph2<T extends Comparable<? super T>> extends AbstractGraph2<T
     @Override
     protected Object clone() throws CloneNotSupportedException {
         LabGraph2<T> cloned= new LabGraph2<T>();
-
-        //cloned.vertices=  new ArrayList<Vertex<T>>(vertices);
+        
         cloned.vertices.addAll(vertices);
+        
         cloned.verticesMap.putAll(verticesMap);
-
-
 
         return cloned;
     }
@@ -79,12 +77,6 @@ public class LabGraph2<T extends Comparable<? super T>> extends AbstractGraph2<T
             }
 
             temporary.sort(Comparator.<T>naturalOrder());
-
-            /*for (int i = 0; i < 1; i++) {//
-                donecek.add(temporary.get(i));
-                cloned.removeVertex(temporary.get(i));
-            }*/
-
 
             donecek.add(temporary.get(0));
             cloned.removeVertex(temporary.get(0));
