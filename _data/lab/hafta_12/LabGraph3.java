@@ -1,9 +1,11 @@
-package AbstractGraph2;
+/**
+ * @author @abdullahkavakli
+ */
+
 
 import java.util.*;
 
 public class LabGraph3<T extends Comparable<T>> extends AbstractGraph3<T> {
-    //T baslangıc=new T
 
     @Override
     public List<T> dfs(T baslangic) {
@@ -23,16 +25,12 @@ public class LabGraph3<T extends Comparable<T>> extends AbstractGraph3<T> {
             for (Vertex<T> vertex : vertices) {
                 if ((vertex.value).equals(current))
                     for (Edge<T> edge: vertex.edges ) {
-                        //stack.push(edge.to.value);
                         temporary.add(edge.to.value);
                     }
 
             }
 
-            //System.out.println(temporary+"b4temp");
-            //java.util.Collections.sort(temporary);
             temporary.sort(Comparator.naturalOrder());
-            //System.out.println(temporary+"temp");
             Collections.reverse(temporary);
 
             for (int i = 0; i < temporary.size(); i++) {
@@ -73,25 +71,13 @@ public class LabGraph3<T extends Comparable<T>> extends AbstractGraph3<T> {
 
             }
 
-
-            //java.util.Collections.sort(temporary);
             temporary.sort(Comparator.naturalOrder());
 
             for (int i = 0; i < temporary.size(); i++) {
                 queue.add(temporary.get(i));
             }
 
-
-            //temporary.clear();
-
         }
-
-
-
-
-
-
-
 
         return visited;
 
