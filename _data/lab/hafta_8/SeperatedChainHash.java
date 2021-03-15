@@ -1,3 +1,7 @@
+/**
+ * @author abdullahkavakli
+ */
+
 import java.util.LinkedList;
 
 public class SeperatedChainHash {
