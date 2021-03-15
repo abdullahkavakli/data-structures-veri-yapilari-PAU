@@ -1,4 +1,6 @@
-
+/**
+ * @author abdullahkavakli
+ */
 
 public class Rotator {
     public static <T> BTNode<T> solaDondur(BTNode<T> k1){
