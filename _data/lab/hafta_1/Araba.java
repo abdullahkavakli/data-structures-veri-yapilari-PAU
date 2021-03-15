@@ -1,4 +1,8 @@
-public class Araba implements Comparable<Araba>{//türkçe karakter ışçöüğİ
+/**
+ * @author abdullahkavakli
+ */
+
+public class Araba implements Comparable<Araba>{
     public int modelYili;
     public double motorHacmi;
     public String marka;
