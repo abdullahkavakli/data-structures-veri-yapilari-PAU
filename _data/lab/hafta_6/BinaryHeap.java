@@ -1,3 +1,6 @@
+/**
+ * @author abdullahkavakli
+ */
 
 import java.util.Arrays;
 
@@ -29,7 +32,6 @@ public class BinaryHeap<T extends Comparable<T>> {
         while(değistirilecekyer>1 && eleman.compareTo(dizi[ebeveyn(değistirilecekyer)])<0){
             T ebeveyn = dizi[ebeveyn(değistirilecekyer)];
             dizi[ebeveyn(değistirilecekyer)]=eleman;
-            //eleman=ebeveyn;
             dizi[değistirilecekyer]=ebeveyn;
             değistirilecekyer/=2;
             
