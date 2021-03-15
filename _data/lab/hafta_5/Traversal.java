@@ -1,3 +1,6 @@
+/**
+ * @author abdullahkavakli
+ */
 
 
 public class Traversal {
@@ -29,7 +32,6 @@ public class Traversal {
             inOrderAssist(node.right);
         
         return null;
-        //return traversalString+=node.value+" ";
     }
 
     public static<T> String preOrder(BTNode<T> node) {
@@ -56,7 +58,6 @@ public class Traversal {
             preOrderAssist(node.right);
         
         return null;
-        //return traversalString+=node.value+" ";
     }
 
     public static<T> String postOrder(BTNode<T> node) {
