@@ -1,4 +1,7 @@
-//Abdullah Kavaklı 19253037
+/**
+ * @author abdullahkavakli
+ */
+
 public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList<T> {
     /*
      küçükten büyüğe sıralı olacak
@@ -23,7 +26,7 @@ public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList
         
         Node<T> p=getHead();
         
-        while(p.next!=null && (0<((value).compareTo(p.next.value)))){//eskisi while((0<((p.value).compareTo(value))) && p.next!=null){
+        while(p.next!=null && (0<((value).compareTo(p.next.value)))){
             p=p.next;//iterator kullanamak zorunda kalabilirsin
             
         }
@@ -96,8 +99,7 @@ public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList
     @Override    
     public AbstractLinkedList<T> concatenate(AbstractLinkedList<T> list) {
         
-        Odev1LinkedList<T> oll = new Odev1LinkedList<>();
-        //int topeleman=((Odev1LinkedList)list).toplamEleman()+1;      
+        Odev1LinkedList<T> oll = new Odev1LinkedList<>();  
         int b = toplamEleman();
         
         for (int sayac = 0; sayac <=b ; sayac++) {
@@ -108,14 +110,10 @@ public class Odev1LinkedList<T extends Comparable<T>> extends AbstractLinkedList
         int listsayaci=((Odev1LinkedList)list).toplamEleman();
         for (int i = 0; i <= listsayaci; i++){
             
-            oll.addLast(((Node<T>)(((Odev1LinkedList)list).elemanikapgel(i))).value);//previously addLast((((Odev1LinkedList)list).elemanikapgel(i)).value);            
+            oll.addLast(((Node<T>)(((Odev1LinkedList)list).elemanikapgel(i))).value);        
             
-        }
-        
-        
-        
-        
-        
+        }               
+                
         return oll;
     }   
             
