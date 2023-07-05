@@ -4,9 +4,9 @@
 	last update : 05/07/2023
 </p>
 
-The repo includes slides i find useful, my all homeworks and lab codes.
+The repo includes slides i find useful, my all homeworks and lab codes. Useful documents: http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html
 
-| Week | [**`Subject`**](http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html) | LAB | HW |
+| Week | **Subject** | LAB | HW |
 |:----:|:-------:|:-----:|:---:|
 |1|[Inheritance, Abstract, Interface and Generics](/_data/weeks/h1.pdf/)|[**`Generics`**](/_data/lab/hafta_1/)<br>**`[100/100]`** |
 |2|[Stacks, Queues and Operation Notations](/_data/weeks/h2.pdf/)| [**`Stacks`**](/_data/lab/hafta_2/)<br>**`[100/100]`** |
