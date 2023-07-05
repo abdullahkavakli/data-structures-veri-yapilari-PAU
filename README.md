@@ -8,7 +8,7 @@ The repo includes slides i find useful, my all homeworks and lab codes.
 
 | Week | [**`Subject`**](http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html) | LAB | HW |
 |:----:|:-------:|:-----:|:---:|
-|1|Inheritance, Abstract, Interface and Generics|[**`Generics`**](/_data/lab/hafta_1/)<br>**`[100/100]`** |
+|1|[Inheritance, Abstract, Interface and Generics](/_data/weeks/h1.pdf/)|[**`Generics`**](/_data/lab/hafta_1/)<br>**`[100/100]`** |
 |2|Stacks, Queues and Operation Notations| [**`Stacks`**](/_data/lab/hafta_2/)<br>**`[100/100]`** |
 |3|LinkedList and DoubleLinkedList|[**`DoubleLinkedList`**](/_data/lab/hafta_3/)<br>**`[100/100]`** |[**`LinkedList`**](/_data/hw/odev1/)<br>**`[100/100]`** |
 |4|BinarySearchTrees and Expression Trees|[**`BinarySearchTree`**](/_data/lab/hafta_4/)<br>**`[75/100]`**||
