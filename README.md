@@ -4,7 +4,9 @@
 	last update : 05/07/2023
 </p>
 
-The repo includes slides i find useful, my all homeworks and lab codes. Useful documents: http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html
+The repo includes slides i find useful, my all homeworks and lab codes. Useful documents: http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html.
+
+You can find lectures slides [here](presentations).
 
 | Week | **Subject** | LAB | HW |
 |:----:|:-------:|:-----:|:---:|
